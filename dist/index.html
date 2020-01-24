@@ -12,9 +12,9 @@
       <a href="#">LOGO</a>
     </div>
     <button class="nav-toggler" type="button" data-toggle="collapse" data-target="#collapseNav">
-      <span class="fa fa-bars"></span>
+      <span class="fa fa-bars fa-2x"></span>
     </button>
-    <div id="collapseNav" class="collapsibleNav">
+    <div id="collapseNav" class="collapse collapsibleNav">
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
@@ -31,7 +31,7 @@
           <a class="nav-link" href="#" data-toggle="dropdown">Menu</a>
           <ul class="dropdown-menu">
             <li class="dropdown-item"><a href="#">Menu1</a></li>
-            <li class="dropdown-item"><a href="#">Menu2</a></liclass="dropdown-item">
+            <li class="dropdown-item"><a href="#">Menu2</a></li>
             <li class="dropdown-item"><a href="#">Menu3</a></li>
           </ul>
         </li>
@@ -55,16 +55,31 @@
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-      <button id="bookBtn">Book a Table</button>
+      <button id="bookBtn"><span>Book a Table</span></button>
     </div>
   </nav>
+
     
   <main class="content">
-    <header class="slider">
+    <div class="slideshow-container">
+      <div class="slider">
+        <div class="slides">
+          <img src="" alt="">
+          <div class="text">
+            <img src="" alt="" class="logo-text">
+            <h3>Welcome</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium repudiandae at laudantium fugiat nemo voluptatibus repellendus, aperiam doloremque hic alias officiis aut, nobis error necessitatibus reiciendis accusamus tempore id ea!</p>
+          </div>
+          <div class="btns">
+            <button id="bookBtn"><span>Book a Table</span></button>
+            <button id="viewMn"><span>View Manu</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </header>
-
-    <div class="tabs"></div>
+    <div class="tabs">
+    </div>
     <div class="welcome"></div>
     <div class="recipes"></div>
     <div class="menus"></div>
