@@ -1,16 +1,5 @@
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-
-library.add(fas, far, fab)
-
-import ourStory from "./our_story"
-import '../dist/assets/styles/style.css';
-
 let slideIndex =0
-
-const showSlides = () =>{
+export const showSlides = () =>{
   const slides = document.getElementsByClassName("slides");
   const dots = document.getElementsByClassName("dots");
   for(let i =0; i< slides.length; i ++){
@@ -30,7 +19,3 @@ const showSlides = () =>{
   dots[slideIndex - 1].className+=" active";
   setTimeout(showSlides, 3000);
 }
-showSlides()
-
-ourStory;
-
