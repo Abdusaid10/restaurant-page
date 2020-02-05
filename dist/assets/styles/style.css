@@ -305,29 +305,36 @@ a:hover{
   background-color: #bbb;
   /* border-bottom: 2px solid black; */
 }
-#tab-content{
+#tabContent{
   display: block;
   width: 100%;
   background-color: white;
 }
-#tab-content .our-story{
+#tabContent .our-story{
   display: flex;
   margin: 0 50px;
   background-color: inherit;
 }
-#tab-content .our-story .st-imgs{
+#tabContent .our-story .st-imgs{
   width: 250px;
   height: 350px;
   padding: 10px;
 }
-#tab-content .our-story .exp-block{
+#tabContent .our-story .exp-block{
   display: block;
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
-#tab-content .our-story .exp-block .read-more{
+#tabContent .our-story .exp-block .read-more{
 color: #222;
+}
+
+/* MENU */
+#tabContent .menu-tab{
+  display: flex;
+  margin: 0 50px;
+  background-color: inherit;
 }
 
 @media screen and (max-width: 932px){

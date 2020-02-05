@@ -1,8 +1,8 @@
 const ourStory= ()=>{
-  let content = document.getElementById("tab-content");
+  let content = document.getElementById("tabContent");
   let block = document.createElement("DIV");
   block.classList.add("our-story");
-  console.log("Our story")
+
   let img1 =document.createElement("IMG");
   img1.classList.add("st-imgs")
   img1.setAttribute("src","../dist/assets/imgs/index-4-btm-2.jpg");
@@ -34,7 +34,6 @@ const ourStory= ()=>{
   link.classList.add("link");
   let a = document.createElement('a');
   a.href = "#"
-  a.classList.add("read-more")
   let textNode = document.createTextNode("Read More");
   a.appendChild(textNode);
   link.appendChild(a)

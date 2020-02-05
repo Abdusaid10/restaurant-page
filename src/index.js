@@ -6,6 +6,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fas, far, fab)
 
 import {ourStory} from "./our_story"
+import {menu} from "./menu"
 import '../dist/assets/styles/style.css';
 
 let slideIndex =0
@@ -35,3 +36,5 @@ const showSlides = () =>{
 showSlides()
 
 ourStory()
+
+menu()
