@@ -49,5 +49,4 @@ const ourStory= ()=>{
   content.appendChild(block);
 } 
 
-
 export {ourStory}

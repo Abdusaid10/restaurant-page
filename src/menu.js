@@ -1,5 +1,5 @@
 const menu = () =>{
-  console.log("menu")
+  // console.log("menu")
   let content = document.getElementById("tabContent");
   let block = document.createElement("DIV");
   block.classList.add("menu-tab");

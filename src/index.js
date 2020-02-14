@@ -7,10 +7,10 @@ library.add(fas, far, fab)
 
 import {ourStory} from "./our_story"
 import {menu} from "./menu"
+import {contact} from "./contact"
 import '../dist/assets/styles/style.css';
 
 let slideIndex =0
-
 
 const showSlides = () =>{
   const slides = document.getElementsByClassName("slides");
@@ -38,3 +38,5 @@ showSlides()
 ourStory()
 
 menu()
+
+contact()

@@ -11,6 +11,10 @@ img{
   vertical-align: middle;
 }
 
+.text-uppercase{
+  text-transform: uppercase;
+}
+
 /* NAVBAR */
 .nav-container{
   display: flex;
@@ -22,12 +26,22 @@ img{
   align-items: center;
 }
 .nav-container .logo{
-  font-size: 20px;
-  position: relative;
   display: block;
-  padding-left: 10px;
-  padding-right: 10px;
+  /* position: relative; */ 
   margin: auto;
+}
+.nav-container .logo a{
+  display: grid;
+  grid-template-columns: .2fr 1fr;
+  grid-column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.logo-food{
+  width: 50px;
+  height: 50px;
+  color: rgb(214, 69, 12);
+  fill: rgb(214, 69, 12);
 }
 
 ul{
@@ -47,6 +61,12 @@ a:hover{
   display: none;
 }
 
+.collapsibleNav .nav .nav-item{
+  display: block;
+  padding: 10px;
+
+}
+
 .nav .nav-item .nav-link{
   text-transform: uppercase;
   font-weight: bold;
@@ -55,11 +75,7 @@ a:hover{
 .collapsibleNav, .nav{
   display: flex;
   margin: auto;
-  padding-left: 12px;
-}
-.collapsibleNav .nav .nav-item{
-  display: block;
-  padding: 15px;
+  /* padding-left: 12px; */
 }
 
 .dropdown{
@@ -337,6 +353,132 @@ color: #222;
   background-color: inherit;
 }
 
+#tabContent .contact-tab{
+  display: inline-flex;
+  flex-direction: column;
+  background-image: url("../imgs/contact-info.jpg");
+  width: 100%;
+  height: 640px;
+  text-align: center;
+}
+
+#tabContent .contact-tab .container{
+   width: inherit;
+  height: inherit;
+  background-color: rgba(0,0,0,.95);
+  color: white;
+}
+
+.contact-tab .first-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.contact-tab .first-block .logo-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+.contact-tab .first-block p{
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.contact-tab .contact-info-block{
+  padding-top: 50px;
+}
+
+.contact-tab .contact-info-block .contact-info-heading{
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+/*  */
+
+.contacts-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin: auto;
+}
+
+#phoneIcon{
+  display: block;
+  width: 1000px;
+  height: 5000px;
+  color: rgb(151, 7, 7);
+}
+
+.border-bottom{
+  display: block;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  width: 40%;
+  border-bottom: .4em solid rgb(214, 69, 12);
+}
+
+.svg-icon {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect{
+  fill: rgb(214, 69, 12);
+}
+
+.svg-icon circle{
+  stroke: rgb(214, 69, 12);
+  stroke-width: 1;
+}
+
+.contact-wrapper{
+  display: block;
+  max-width: 250px;
+  padding: 30px 25px 30px 25px;
+  margin: auto;
+}
+.contact-wrapper p{
+  padding-top:30px;
+}
+
+/* SHARE BLOCK */
+
+.share-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.share-block .social-icons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  justify-content: center;
+  margin: auto;
+  padding-top: 10px;
+}
+.social-icon, .insta-icon {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  border-bottom: .2em solid rgb(214, 69, 12);
+  width: 45px;
+  height: 45px;
+  padding: 10px 0 10px 0;
+  fill: white;
+  color: white;
+}
+.insta-icon{
+  stroke: white;
+  stroke-width: 1;
+}
 @media screen and (max-width: 932px){
 /* NAVIGATION BAR */
   .nav-container{
