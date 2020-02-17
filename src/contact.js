@@ -1,8 +1,9 @@
 const contact = () => {
   let content = document.getElementById("tabContent");
   let block = document.createElement("DIV");
-  block.classList.add("contact-tab");
-  
+  block.classList.add("contact-tab", "hide");
+  block.setAttribute("id", "contacts");
+
   let contactContainer = document.createElement("DIV");
   contactContainer.classList.add("container");
 
@@ -47,7 +48,6 @@ const contact = () => {
   phone.textContent = "Phone";
 
   let phoneNum = document.createElement("p");
-  // phoneNum.classList.add("")
   phoneNum.textContent = "+01000111222(Toll free).";
 
   let addressWrapper = document.createElement("div");

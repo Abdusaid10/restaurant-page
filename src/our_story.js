@@ -2,6 +2,7 @@ const ourStory= ()=>{
   let content = document.getElementById("tabContent");
   let block = document.createElement("DIV");
   block.classList.add("our-story");
+  block.setAttribute("id", "story");
 
   let img1 =document.createElement("IMG");
   img1.classList.add("st-imgs")

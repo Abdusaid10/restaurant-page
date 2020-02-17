@@ -1,9 +1,9 @@
 const menu = () =>{
-  // console.log("menu")
   let content = document.getElementById("tabContent");
   let block = document.createElement("DIV");
-  block.classList.add("menu-tab");
-
+  block.classList.add("menu-tab", "hide");
+  block.setAttribute("id", "menu");
+  
   let leftImgs = document.createElement("DIV");
   leftImgs.classList.add("left-imgs");
 
@@ -14,7 +14,7 @@ const menu = () =>{
   img1.classList.add("menu-imgs");
   img1.src = "../dist/assets/imgs/index-4-1.jpg"
   let img1Text = document.createElement("span");
-  img1Text.classList.add("img-text");
+  img1Text.classList.add("img-text", "text-uppercase");
   img1Text.textContent ="Starter";
 
   let img2Wrapper = document.createElement("DIV");
@@ -24,7 +24,7 @@ const menu = () =>{
   img2.classList.add("menu-imgs");
   img2.src = "../dist/assets/imgs/index-4-3.jpg"
   let img2Text = document.createElement("SPAN");
-  img2Text.classList.add("img-text");
+  img2Text.classList.add("img-text", "text-uppercase");
   img2Text.textContent ="Main Course";
 
   let menuDesc= document.createElement("DIV");
@@ -62,19 +62,21 @@ const menu = () =>{
   img3Wrapper.classList.add("img-wrapper");
   
   let img3 = document.createElement("IMG");
+  img3.classList.add("menu-imgs");
   img3.src = "../dist/assets/imgs/index-4-2.jpg";
   let img3Text = document.createElement("span");
-  img3Text.classList.add("img-text");
+  img3Text.classList.add("img-text", "text-uppercase");
   img3Text.textContent ="Deserts";
 
   let img4Wrapper = document.createElement("div");
   img4Wrapper.classList.add("img-wrapper");
 
   let img4 = document.createElement("img");
+  img4.classList.add("menu-imgs");
   img4.src = "../dist/assets/imgs/index-4-4.jpg";
   let img4Text = document.createElement("span");
-  img4Text.classList.add("img-text");
-  img4Text.textContent ="Main Course";
+  img4Text.classList.add("img-text", "text-uppercase");
+  img4Text.textContent ="Drinks";
 
   img1Wrapper.appendChild(img1);
   img1Wrapper.appendChild(img1Text)

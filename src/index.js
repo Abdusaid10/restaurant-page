@@ -33,10 +33,36 @@ const showSlides = () =>{
   setTimeout(showSlides, 3000);
 }
 
-showSlides()
+const tab = document.getElementById("tabNav");
 
-ourStory()
+function tabclickListener(){  
+  ourStory();
+  for (let i of tab.children){
+    i.addEventListener('click', (e)=>{
+      updateTabContent(e);
+    })
+  }
+}
 
-menu()
-
-contact()
+function updateTabContent(e){
+  let tabContent= document.getElementById("tabContent");
+ 
+  if(e.currentTarget.classList.contains("story")){
+    ourStory();
+    e.currentTarget.classList.add("active-tab");
+  }
+  else if(e.currentTarget.classList.contains("menu")){
+    menu();
+    e.currentTarget.classList.add("active-tab");
+  }
+  else  if(e.currentTarget.classList.contains("contacts")){
+    contact();
+    e.currentTarget.classList.add("active-tab");
+  }
+  for(let i of tabContent.children){
+    tabContent.removeChild(i)
+    e.currentTarget.classList.remove("active-tab");
+  }
+}
+showSlides();
+tabclickListener()
