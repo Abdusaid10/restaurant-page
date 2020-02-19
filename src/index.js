@@ -41,7 +41,6 @@ function tabclickListener(){
     i.addEventListener('click', (e)=>{
       updateTabContent(e);
       e.currentTarget.classList.add("active-tab");
-      console.log(e.currentTarget);
     })    
   }
 }

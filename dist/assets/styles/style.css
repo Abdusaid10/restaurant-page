@@ -29,7 +29,6 @@ img{
 }
 .nav-container .logo{
   display: block;
-  /* position: relative; */ 
   margin: auto;
 }
 .nav-container .logo a{
@@ -77,7 +76,6 @@ a:hover{
 .collapsibleNav, .nav{
   display: flex;
   margin: auto;
-  /* padding-left: 12px; */
 }
 
 .dropdown{
@@ -288,13 +286,11 @@ a:hover{
   padding: 5px;
   border-bottom: 2px solid rgb(214, 69, 12);
   border-collapse: separate;
-  /* border-spacing: 50px; */
 }
 
 /* TABS */
 #tabs{
   display: flexbox;
-  /* grid-template-columns: 0.2fr auto; */
   background-color: red;
   margin: auto;
   position: relative;
@@ -318,7 +314,7 @@ a:hover{
 }
 
 #tabs .active-tab a{
-  color: rgb(167, 163, 162);
+  color: rgb(15, 15, 14);
 }
 
 #tabs #tabNav li a{
@@ -445,7 +441,6 @@ color: #222;
   font-size: 24px;
   padding-bottom: 10px;
 }
-/*  */
 
 .contacts-container{
   display: grid;
