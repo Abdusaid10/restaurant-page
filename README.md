@@ -1,6 +1,7 @@
 <img src="./screenshot.png">
 # restaurant-page
-> An Odin Project for learning ES6, webpack and DOM manipulation
+
+> An Odin Project for learning ES6, modularized code and also how to set up javascript application made of different modules using webpack
 
 ## Built With
 * Vanilla JavaScript
