@@ -40,28 +40,31 @@ function tabclickListener(){
   for (let i of tab.children){
     i.addEventListener('click', (e)=>{
       updateTabContent(e);
-    })
+      e.currentTarget.classList.add("active-tab");
+      console.log(e.currentTarget);
+    })    
   }
 }
 
 function updateTabContent(e){
   let tabContent= document.getElementById("tabContent");
+  for(let i of tabContent.children){
+    tabContent.removeChild(i)
+  }
  
+  for(let i of tab.children){
+    if(i.classList.contains("active-tab")){
+      i.classList.remove('active-tab');
+    }
+  }
   if(e.currentTarget.classList.contains("story")){
     ourStory();
-    e.currentTarget.classList.add("active-tab");
   }
   else if(e.currentTarget.classList.contains("menu")){
     menu();
-    e.currentTarget.classList.add("active-tab");
   }
   else  if(e.currentTarget.classList.contains("contacts")){
     contact();
-    e.currentTarget.classList.add("active-tab");
-  }
-  for(let i of tabContent.children){
-    tabContent.removeChild(i)
-    e.currentTarget.classList.remove("active-tab");
   }
 }
 showSlides();
