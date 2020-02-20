@@ -165,4 +165,4 @@ const contact = () => {
   content.appendChild(block);
 };
 
-export default { contact };
+export { contact as default };
