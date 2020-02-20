@@ -50,4 +50,4 @@ const ourStory = () => {
   content.appendChild(block);
 };
 
-export { ourStory };
+export default { ourStory };

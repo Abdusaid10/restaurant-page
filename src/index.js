@@ -24,7 +24,7 @@ const showSlides = () => {
     slideIndex = 1;
   }
 
-  for (let i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i += 1) {
     dots[i].className = dots[i].className.replace(' active', '');
   }
 

@@ -109,4 +109,4 @@ const menu = () => {
   content.appendChild(block);
 };
 
-export { menu };
+export default { menu };
