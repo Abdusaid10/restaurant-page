@@ -34,7 +34,7 @@ const showSlides = () => {
 };
 
 const tab = document.getElementById('tabNav');
-function updateTabContent(e) {
+const updateTabContent = (e) => {
   const tabContent = document.getElementById('tabContent');
   for (const i of tabContent.children) {
     tabContent.removeChild(i);
@@ -54,7 +54,7 @@ function updateTabContent(e) {
   }
 }
 
-function tabclickListener() {
+const tabclickListener = () => {
   ourStory();
   for (const i of tab.children) {
     i.addEventListener('click', (e) => {
