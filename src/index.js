@@ -52,7 +52,7 @@ const updateTabContent = (e) => {
   } else if (e.currentTarget.classList.contains('contacts')) {
     contact();
   }
-}
+};
 
 const tabclickListener = () => {
   ourStory();
@@ -62,7 +62,7 @@ const tabclickListener = () => {
       e.currentTarget.classList.add('active-tab');
     });
   }
-}
+};
 
 showSlides();
 tabclickListener();
