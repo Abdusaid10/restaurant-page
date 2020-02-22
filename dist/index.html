@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Restaurant Page</title>
+</head>
+<body>
+  <nav class="nav-container nav-expand">
+    <div class="logo">
+      <a href="#">
+        <img class="logo-food" src="../dist/assets/icons/logo.svg" alt="Restora">
+        <img src="../dist/assets/imgs/logo-text.png" alt="Restora">
+      </a>
+    </div>
+    <button class="nav-toggler" type="button" data-toggle="collapse" data-target="#collapseNav">
+      <span class="fa fa-bars"></span>
+    </button>
+    <div id="collapseNav" class="collapse collapsibleNav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-toggle="dropdown">Gallery</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">Gallery1</a></li>
+            <li class="dropdown-item"><a href="#">Gallery2</a></li>
+            <li class="dropdown-item"><a href="#">Gallery3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-toggle="dropdown">Menu</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">Menu1</a></li>
+            <li class="dropdown-item"><a href="#">Menu2</a></li>
+            <li class="dropdown-item"><a href="#">Menu3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-toggle="dropdown">Shop</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">Shop1</a></li>
+            <li class="dropdown-item"><a href="#">Shop2</a></li>
+            <li class="dropdown-item"><a href="#">Shop3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">Pages1</a></li>
+            <li class="dropdown-item"><a href="#">Pages2</a></li>
+            <li class="dropdown-item"><a href="#">Pages3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <button class="bookBtn"><span>Book a Table</span></button>
+    </div>
+  </nav>
+
+  <main class="content">
+    <div class="slideshow-container">
+      <div class="slides">
+        <img class="slide-img" src="../dist/assets/imgs/slider-1.jpg.jpeg" alt="">
+        <div class="text">
+          <img src="../dist/assets/imgs/head-icon.png" alt="" class="logo-text">
+          <h3>Welcome To The Restora</h3>
+          <p>People who love to eat are always the best people.</p>
+        </div>
+      </div>
+      <div class="slides">
+        <img class="slide-img" src="../dist/assets/imgs/slider-2.jpg" alt="">
+        <div class="text">
+          <img src="../dist/assets/imgs/head-icon.png" alt="" class="logo-text">
+          <h3>When you’re here,you’re family</h3>
+          <p>People who love to eat are always the best people.</p>
+        </div>
+      </div>
+      <div class="slides">
+        <img class="slide-img" src="../dist/assets/imgs/slider-3.jpg" alt="">
+        <div class="text">
+          <img src="../dist/assets/imgs/head-icon.png" alt="" class="logo-head-icon">
+          <h3>Big Pieces, Little Prices</h3>
+          <p>Full Flavor, Full Pockets, Full Life</p>
+        </div>
+      </div>
+      <div class="btns">
+        <button id="bookBtn-main" class="bookBtn"><span>Book a Table</span></button>
+        <button id="viewMn"><span>View Manu</span></button>
+      </div>
+      <div class="dots-container">
+        <span class="dots"></span>
+        <span class="dots"></span>
+        <span class="dots"></span>
+      </div>
+    </div>
+
+    <div class="welcome">
+      <div class="welcome-text">
+        <img class="logo-s" src="../dist/assets/imgs/logo.png" alt="Logo">
+        <span>Welcome to</span>
+        <h2 class="section-title">Restora</h2>
+        <p class="p-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Vestibulum porttitor egestas orci, vitae ullamcorper risus consectetur id.
+          Donec at velit vestibulum, rutrum massa quis, porttitor lorem.
+          Donec et ultricies arcu. In odio nisl ac, rhoncus gravida mauris.
+        </p>
+        <div class="link">
+          <a href="#">Book a Table</a>
+        </div>
+      </div>
+      <img class="welcome-img"src="../dist/assets/imgs/story-front.jpg" alt="interior">
+    </div>
+    <div id="tabs">
+      <ul id="tabNav">
+        <li class="story text-uppercase">
+          <a href="#story">Our Story</a>
+        </li>
+        <li class="menu text-uppercase">
+          <a href="#menu">Delicious menu</a>
+        </li>
+        <li class="contacts text-uppercase">
+          <a href="#contacts">Contact</a>
+        </li>
+      </ul>
+      <div id="tabContent">
+        
+      </div>
+    </div>
+  
+    <footer class="contact-info">
+
+    </footer>
+  </main>
+  <footer class="footer-rights">
+
+  </footer>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
